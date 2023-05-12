@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassportSevaKendra</title>
+    <style>
+
+        .body{
+            background-image: linear-gradient(orange,white,green);
+            min-height: 200vh;
+            
+        }
+        .btn{
+            border-radius: 6px;
+            background: transparent;
+            font-size: large;
+        }
+        .btn:hover{
+            border-radius: 6px;
+            background: transparent;
+            transform: scale(1.1);
+            background-image: linear-gradient(orange,white,green);
+        }
+        .img1{
+            
+            position: relative;
+            top: 10px;
+           float: right;
+          
+        }
+        .img2{
+            float: right;
+            position: relative;
+            top: 50px;
+            padding-right: 80px;
+        }
+        .img222{
+            float: right;
+            position: relative;
+            top: 0px;
+            padding-right: 130px;
+        }
+        .img211{
+            float: right;
+            position: relative;
+            top: 90px;
+        }
+        .img21{
+            float: right;
+            position: relative;
+            padding-right: 60px;
+        }
+        
+        .img3{
+            float: left;
+            position: relative;
+            left: 50px;
+        }
+        .heading{
+            font-size: 50px;
+            position: relative;
+            left: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .btn2{
+            border-radius: 6px;
+            background-color: transparent;
+            font-size: large;
+            position: relative;
+            left: 50px;
+        }
+        .btn2:hover{
+            border-radius: 6px;
+            background: transparent;
+            font-size: large;
+            transform: scale(1.1);
+            background-image: linear-gradient(orange,white,green);
+        }
+        .btn3{
+            border-radius: 6px;
+            background: transparent;
+            font-size: large;
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+        .btn3:hover{
+            border-radius: 6px;
+            background: transparent;
+            font-size: large;
+            transform: scale(1.1);
+            background-image: linear-gradient(orange,white,green);
+        }
+        .btnpos{
+            text-align: center;
+        }
+        .link{
+            text-decoration: dashed;
+        }
+        .aline{
+            text-align: left;
+        }
+        .img4{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .up{
+            position: relative;
+            bottom: 100px;
+        }
+        .right{
+            position: relative;
+            padding-left: 90px;
+            bottom: 60px;
+        }
+        .img42{
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+        }
+        .row2::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .up2{
+            position: relative;
+            bottom: 40px;
+        }
+        .right2{
+            position: relative;
+            padding-left: 10px;
+            bottom: 10px;
+        }
+        .font{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        nav{
+            background-image: linear-gradient(orange,white,green);
+           
+            padding: 50px;
+            padding-left: 200px;
+            padding-right: 200px;
+
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 13px 35px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            transition: color 0.5s;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        nav ul li::after{
+            content: '';
+            background: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0;
+            transition: top 0.5s, opacity 0.5s;
+
+        }
+        nav ul li::after{
+            color: white;
+        }
+        nav ul li:hover::after{
+            top: 50%;
+            opacity: 1;
+        }
+        .bar{
+            text-decoration: none;
+
+        }
+        .navbar{
+            background: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-right: 15px;
+            padding-left: 80px;
+        }
+        .navbar2{
+            padding-right: 15px;
+            padding-left: 80px;
+            border-radius: 10px;
+        }
+        .navdiv2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navdiv{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+        .button{
+            background-color: white;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+        }
+        .button:hover{
+            background-color: white;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            transform: scale(1.1);
+        }
+        .button a{
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+       .logo2{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .wrapper{
+            margin: 100px;
+            width: 70%;
+        }
+        .imo{
+            max-width: 350px;
+            float: right;
+            margin-left: 15px;
+            position: relative;
+            padding-right: 30px;
+            bottom: 30px;
+        }
+        .imo2{
+            max-width: 350px;
+            float: right;
+            margin-left: 15px;
+        }
+        .btt{
+            float: right;
+            padding-right: 100px;
+           
+        }
+        .bttf{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        .textbox{
+            padding-right: 10px;
+        }
+        .bk{
+            background-color: rgb(195, 195, 195);
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            border-radius: 10px;
+        }
+        
+
+    </style>
+    
+</head>
+<body class="body">
+
+    <div class="bar">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo2"><h1>Home</h1></div>
+                <ul>
+                    <button class="button">Home</button>
+                    <button class="button">About</button>
+                    <button class="button">Offices</button>
+                    <button class="button">Contact</button>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <nav class="navbar2">
+        <div class="navdiv2">
+            <ul>
+                <li>Register</li>
+                <li>User login</li>
+                <li>Track Application Status</li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+    
+    <br>
+    
+    <img class="img1" src="img/21-12-2016_07-04-49_passport-seva.png" alt="Image nahi mil rha!" height="100" width="300">
+
+    <div class="justfy">
+    <h1 class="heading">Welcome to Passport Seva Kendra</h1>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    
+    <button class="btn2">Apply online</button>
+    
+    <br>
+    <div >
+        <button class="btn3">Documents required</button>
+    </div>
+    <br>
+    <br>
+    <button class="btn2">Reissue Passport</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="row2">
+        
+        <div class="btt">
+            <div class="up2">
+                <div class="bk">
+            <h2 class="bttf">Passport Office Page</h2>
+            <select  name="o_name" id="o_name">
+                <option value="0">---Select Passport Office---</option>
+                <option value="1">Ahmedabad</option>
+                <option value="2">Amritsar</option>
+                <option value="3">Bareilly</option>
+                <option value="4">Bengaluru</option>
+                <option value="5">Bhopal</option>
+                <option value="6">Bhubaneswar</option>
+                <option value="7">Chandigarh</option>
+                <option value="8">Chennai</option>
+                <option value="9">Cochin</option>
+                <option value="10">Coimbatore</option>
+            </select>
+    
+            <h2 class="bttf">Mission/Post Page</h2>
+            <select name="r_name" id="r_name">
+                <option value="0">---Select Region/Country---</option>
+                <option value="1">Afghanistan</option>
+                <option value="2">Belgium</option>
+                <option value="3">Canada</option>
+                <option value="4">Denmark</option>
+                <option value="5">Egypt</option>
+                <option value="6">France</option>
+                <option value="7">Germany</option>
+                <option value="8">Hong Kong</option>
+                <option value="9">India</option>
+                <option value="10">Japan</option>
+            </select>
+        
+    
+            <h2 class="bttf">Login for Official Users</h2>
+            <select name="u_name" id="u_name">
+                <option value="0">---------Official Users---------</option>
+                <option value="1">Mission/Post</option>
+                <option value="2">Isp Nashik</option>
+                <option value="3">Immigration</option>
+                <option value="4">Dashboards</option>
+                <option value="5">Police</option>
+                <option value="6">CCE</option>
+                <option value="7">MADAD Consular User</option>
+                <option value="8">India Post</option>
+            </select>
+        </div>
+        </div>
+    </div>
+
+        <div class="img42">
+            <img class="right2" src="img/wp4501601.webp" alt="Image nahi mil raha!" height="150" width="90">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <div class="wrapper">
+        <img class="imo2" src="img/India_Post_Logo.png" alt="Not found">
+        <div class="textbox">
+            <h1>Passport-Post Office PSKs-- More than 425+</h1>
+            <h2><b>टॉल फ्री पूछताछ हेल्पलाइन </b></h2>
+            <h3> <b>   18002666868 </b></h3>
+            <p> प्रातः 9.00 से रात्रि 6.00 तक </p>
+            <p> <b> (रविवार और राजपत्रित अवकाशों को छोड़कर) </b></p>
+            <p>  आईवीआरएस सुविधा उपलब्धता 24*7*365 </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="wrapper">
+        
+        <img class="imo" src="img/s-jaishanker.png" alt="Image nahi mil raha!" height="300" width="300">
+
+    <div class="textbox">
+    <h1 class="font">Subrahmanyam Jaishankar</h1>
+    <a class="link" href="https://en.wikipedia.org/wiki/Minister_of_External_Affairs_(India)"><h3 class="aline">30th Minister of External Affairs</h3></a>
+    <p class="font"><b>Subrahmanyam Jaishankar </b>(born 9 January 1955) is an Indian diplomat and politician serving as the Minister of External Affairs of the Government of India since 30 May 2019, became the first ever diplomat to be appointed as External Affairs minister.[1] He is a member of the Bharatiya Janata Party and a Member of Parliament in the Rajya Sabha since 5 July 2019. He previously served as the Foreign Secretary from January 2015 to January 2018.</p>
+    <p class="font">He joined the Indian Foreign Service (IFS) in 1977 and during his diplomatic career spanning over 38 years, he served in different capacities in India and abroad including as a High Commissioner to Singapore (2007–09) and as Ambassador to the Czech Republic (2001–04), China (2009–2013) and the US (2014–2015). Jaishankar played a key role in negotiating the Indo-US civilian nuclear agreement.</p>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="img4">
+        <a href="https://amritmahotsav.nic.in/" target="_blank"><img class="up" src="img/logo.png" alt="Image nahi mil raha!" height="300" width="300"></a>
+    </div>
+    <dir class="img4">
+    <a href="https://en.wikipedia.org/wiki/2023_G20_New_Delhi_summit" target="_blank"><img class="right" src="img/g20-summit-india-2023-logo.png" alt="Image nahi mil raha!" height="190" width="200"></a>
+    </div>
+    </div>
+
+    <hr>
+    <dir class="font">
+    <p class="btnpos"><b>© Content Owned by Ministry of External Affairs, Government of India </b><a href="">Privacy</a>. <a href="">Terms</a></p>
+    </dir>
+
+</body>
+</html>
